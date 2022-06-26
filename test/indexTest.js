@@ -67,12 +67,12 @@ describe('index.js', function () {
 
     it('returns the correct reduced value when passed an initial value', function () {
       const reduceWithAcc = myReduce(testArr, callback, 10)
-      expect(reduceWithAcc).to.equal(40)
+      expect(reduceWithAcc).to.equal(3)
     })
 
     it('returns the correct reduced value when not passed an initial value', function () {
       const reduceSansAcc = myReduce(testArr, callback)
-      expect(reduceSansAcc).to.equal(28)
+      expect(reduceSansAcc).to.equal(3)
     })
 
     it('does not modify the original array', function () {
@@ -81,7 +81,7 @@ describe('index.js', function () {
 
     it('returns the correct reduced value from object values', function () {
       const objResult = myReduce(testObj, callback)
-      expect(objResult).to.equal(28);
+      expect(objResult).to.equal(3);
     })
 
     it('does not modify the original object', function () {
